@@ -138,7 +138,7 @@
           "type": "apoli:resource",
           "resource": "touhouorigins:mana_resource",
           "comparison": ">=",
-          "compare_to": 30
+          "compare_to": 50
         },
         {
           "type": "apoli:resource",
