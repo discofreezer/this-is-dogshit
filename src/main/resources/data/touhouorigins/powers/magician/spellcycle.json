@@ -1,0 +1,70 @@
+{
+  "type": "origins:multiple",
+
+  "counter": {
+    "type": "origins:resource",
+    "min": 0,
+    "max": 1,
+    "hud_render": {
+      "should_render": false
+    },
+    "start_value": 0
+  },
+
+  "cycle": {
+    "type": "apoli:active_self",
+    "entity_action": {
+      "type": "apoli:if_else_list",
+      "actions": [
+        {
+          "condition": {
+            "type": "apoli:resource",
+            "resource": "touhouorigins:spellcycle_counter",
+            "comparison": "==",
+            "compare_to": 1
+          },
+          "action": {
+            "type": "apoli:and",
+            "actions": [
+              {
+                "type": "apoli:change_resource",
+                "resource": "touhouorigins:spellcycle_counter",
+                "change": -1
+              },
+              {
+                "type": "apoli:execute_command",
+                "command": "tellraw @s {\"text\": \"Fireball\", \"color\": \"red\"}"
+              }
+            ]
+          }
+        },
+        {
+          "condition": {
+            "type": "apoli:resource",
+            "resource": "touhouorigins:spellcycle_counter",
+            "comparison": "==",
+            "compare_to": 0
+          },
+          "action": {
+            "type": "apoli:and",
+            "actions": [
+              {
+                "type": "apoli:change_resource",
+                "resource": "touhouorigins:spellcycle_counter",
+                "change": 1
+              },
+              {
+                "type": "apoli:execute_command",
+                "command": "tellraw @s {\"text\": \"Heal\", \"color\": \"blue\"}"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "cooldown": 5,
+    "key": {
+      "key": "key.origins.secondary_active"
+    }
+  }
+}

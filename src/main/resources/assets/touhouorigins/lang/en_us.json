@@ -115,6 +115,18 @@
   "power.touhouorigins.moon_rabbit/timid_constitution.name": "Timid Constitution",
   "power.touhouorigins.moon_rabbit/timid_constitution.description": "You have 2 less hearts of health. Melee weapons such as axes, swords, and tridents swing 40% slower.",
 
+  "origin.touhouorigins.magician.name": "Magician",
+  "origin.touhouorigins.magician.description":  "While highly skilled in magic, a magician youkai's body is essentially human, and they do not possess the enhanced physical strength and durability of most youkai. In fact many magician youkai are frail even by human standards.",
+
+  "power.touhouorigins.common/mana.name": "Mana",
+  "power.touhouorigins.common/mana.description": "You use mana to cast spells, which has a unique meter that regenerates over time. You also cannot starve." ,
+  "power.touhouorigins.magician/spells.name": "Spellcasting",
+  "power.touhouorigins.magician/spells.description": "You have two basic spells: one for attacking and one for healing.",
+  "power.touhouorigins.magician/spellswitch.name": "Spellcycling",
+  "power.touhouorigins.magician/spellswitch.description": "You can cycle through your spell list.",
+  "power.touhouorigins.magician/weak_body.name": "Dedicated to the Craft",
+  "power.touhouorigins.magician/weak_body.description": "As a magician, your physical attributes are weaker. However, you gain xp slightly faster and are immune to poison.",
+
   "power.touhouorigins.common/apparition_appetite.name": "Apparition's Appetite",
   "power.touhouorigins.common/apparition_appetite.description": "You do not require food to stay alive.",
   "power.touhouorigins.common/futile_concoctions.name": "Futile Concoctions",
@@ -146,5 +158,11 @@
   "death.attack.fireThorns": "%1$s burned their hand fighting %2$s",
   "death.attack.fireThorns.item": "%1$s burned their hand on %3$s fighting %2$s",
 
-  "touhouorigins.gui.badge.upgrade": "Upgrade path"
+  "touhouorigins.gui.badge.upgrade": "Upgrade path",
+
+  "effect.touhouorigins.manapower": "Mana Power",
+
+  "item.touhouorigins.potion.effect.manapower_potion": "Mana Power Potion",
+  "item.touhouorigins.splash_potion.effect.manapower_potion": "Splash Potion of Mana Power",
+  "item.touhouorigins.lingering_potion.effect.manapower_potion": "Lingering Potion of Mana Power"
 }

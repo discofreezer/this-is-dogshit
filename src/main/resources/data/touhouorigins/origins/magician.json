@@ -1,0 +1,13 @@
+{
+	"powers": [
+		"touhouorigins:common/mana",
+		"touhouorigins:magician/spells",
+		"touhouorigins:magician/spellswitch",
+		"touhouorigins:magician/weak_body"
+	],
+	"icon": "touhouorigins:potion.effect.manapower_potion",
+	"order": 4,
+	"impact": 2,
+	"name": "Magician",
+	"description": "While highly skilled in magic, a magician youkai's body is essentially human, and they do not possess the enhanced physical strength and durability of most youkai. In fact many magician youkai are frail even by human standards."
+}

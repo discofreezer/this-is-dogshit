@@ -1,0 +1,40 @@
+{
+  "type": "apoli:multiple",
+  "double_xp": {
+    "type": "apoli:modify_xp_gain",
+    "modifier": {
+      "operation": "multiply_total",
+      "value": 0.5
+    }
+  },
+  "poison_immunity": {
+    "type": "origins:effect_immunity",
+    "effects": [
+      "minecraft:poison",
+      "minecraft:hunger"
+    ]
+  },
+  "weak_bitch": {
+    "type": "apoli:attribute",
+    "modifiers": [
+      {
+        "name": "Max health decrease",
+        "attribute": "minecraft:generic.max_health",
+        "operation": "addition",
+        "value": -2
+      },
+      {
+        "name": "Attack speed decrease",
+        "attribute": "minecraft:generic.attack_speed",
+        "operation": "multiply_total",
+        "value": -0.1
+      },
+      {
+        "name": "Attack damage decrease",
+        "attribute": "minecraft:generic.attack_damage",
+        "operation": "multiply_total",
+        "value": -0.1
+      }
+    ]
+  }
+}
