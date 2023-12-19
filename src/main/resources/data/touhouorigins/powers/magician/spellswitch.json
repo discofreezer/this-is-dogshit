@@ -1,8 +1,8 @@
 {
-  "type": "origins:multiple",
+  "type": "apoli:multiple",
 
   "counter": {
-    "type": "origins:resource",
+    "type": "apoli:resource",
     "min": 0,
     "max": 1,
     "hud_render": {
@@ -19,7 +19,7 @@
         {
           "condition": {
             "type": "apoli:resource",
-            "resource": "touhouorigins:spellcycle_counter",
+            "resource": "touhouorigins:magician/spellswitch_counter",
             "comparison": "==",
             "compare_to": 1
           },
@@ -28,7 +28,7 @@
             "actions": [
               {
                 "type": "apoli:change_resource",
-                "resource": "touhouorigins:spellcycle_counter",
+                "resource": "touhouorigins:magician/spellswitch_counter",
                 "change": -1
               },
               {
@@ -41,7 +41,7 @@
         {
           "condition": {
             "type": "apoli:resource",
-            "resource": "touhouorigins:spellcycle_counter",
+            "resource": "touhouorigins:magician/spellswitch_counter",
             "comparison": "==",
             "compare_to": 0
           },
@@ -50,7 +50,7 @@
             "actions": [
               {
                 "type": "apoli:change_resource",
-                "resource": "touhouorigins:spellcycle_counter",
+                "resource": "touhouorigins:magician/spellswitch_counter",
                 "change": 1
               },
               {

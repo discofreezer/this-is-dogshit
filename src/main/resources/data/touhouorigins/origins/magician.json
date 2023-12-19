@@ -1,11 +1,11 @@
 {
 	"powers": [
-		"touhouorigins:common/mana",
+		"touhouorigins:magician/mana",
 		"touhouorigins:magician/spells",
 		"touhouorigins:magician/spellswitch",
 		"touhouorigins:magician/weak_body"
 	],
-	"icon": "touhouorigins:potion.effect.manapower_potion",
+	"icon": "minecraft:brown_mushroom",
 	"order": 4,
 	"impact": 2,
 	"name": "Magician",

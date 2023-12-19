@@ -1,7 +1,7 @@
 {
-  "type": "origins:multiple",
+  "type": "apoli:multiple",
   "resource": {
-    "type": "origins:resource",
+    "type": "apoli:resource",
     "min": 0,
     "max": 200,
     "hud_render": {
@@ -11,24 +11,24 @@
     "start_value": 200
   },
   "resource_gain": {
-    "type": "origins:action_over_time",
+    "type": "apoli:action_over_time",
     "entity_action": {
-      "type": "origins:change_resource",
-      "resource": "touhouorigins:mana_resource",
+      "type": "apoli:change_resource",
+      "resource": "touhouorigins:magician/mana_resource",
       "change": 10
     },
     "interval": 80,
     "condition": {
-      "type": "origins:and",
+      "type": "apoli:and",
       "conditions": [
         {
-          "type": "origins:resource",
-          "resource": "touhouorigins:mana_resource",
+          "type": "apoli:resource",
+          "resource": "touhouorigins:magician/mana_resource",
           "comparison": "<",
           "compare_to": 200
         },
         {
-          "type": "origins:status_effect",
+          "type": "apoli:status_effect",
           "effect": "touhouorigins:manapower",
           "inverted": true
         }
@@ -36,24 +36,24 @@
     }
   },
   "resource_gain_power_1": {
-    "type": "origins:action_over_time",
+    "type": "apoli:action_over_time",
     "entity_action": {
-      "type": "origins:change_resource",
-      "resource": "touhouorigins:mana_resource",
+      "type": "apoli:change_resource",
+      "resource": "touhouorigins:magician/mana_resource",
       "change": 10
     },
     "interval": 40,
     "condition": {
-      "type": "origins:and",
+      "type": "apoli:and",
       "conditions": [
         {
-          "type": "origins:resource",
-          "resource": "touhouorigins:mana_resource",
+          "type": "apoli:resource",
+          "resource": "touhouorigins:magician/mana_resource",
           "comparison": "<",
           "compare_to": 150
         },
         {
-          "type": "origins:status_effect",
+          "type": "apoli:status_effect",
           "effect": "touhouorigins:manapower",
           "max_amplifier": 0
         }
@@ -61,24 +61,24 @@
     }
   },
   "resource_gain_power_2": {
-    "type": "origins:action_over_time",
+    "type": "apoli:action_over_time",
     "entity_action": {
-      "type": "origins:change_resource",
-      "resource": "touhouorigins:mana_resource",
+      "type": "apoli:change_resource",
+      "resource": "touhouorigins:magician/mana_resource",
       "change": 10
     },
     "interval": 20,
     "condition": {
-      "type": "origins:and",
+      "type": "apoli:and",
       "conditions": [
         {
-          "type": "origins:resource",
-          "resource": "touhouorigins:mana_resource",
+          "type": "apoli:resource",
+          "resource": "touhouorigins:magician/mana_resource",
           "comparison": "<",
           "compare_to": 150
         },
         {
-          "type": "origins:status_effect",
+          "type": "apoli:status_effect",
           "effect": "touhouorigins:manapower",
           "min_amplifier": 1
         }

@@ -118,8 +118,8 @@
   "origin.touhouorigins.magician.name": "Magician",
   "origin.touhouorigins.magician.description":  "While highly skilled in magic, a magician youkai's body is essentially human, and they do not possess the enhanced physical strength and durability of most youkai. In fact many magician youkai are frail even by human standards.",
 
-  "power.touhouorigins.common/mana.name": "Mana",
-  "power.touhouorigins.common/mana.description": "You use mana to cast spells, which has a unique meter that regenerates over time. You also cannot starve." ,
+  "power.touhouorigins.magician/mana.name": "Mana",
+  "power.touhouorigins.magician/mana.description": "You use mana to cast spells, which has a unique meter that regenerates over time. You also cannot starve." ,
   "power.touhouorigins.magician/spells.name": "Spellcasting",
   "power.touhouorigins.magician/spells.description": "You have two basic spells: one for attacking and one for healing.",
   "power.touhouorigins.magician/spellswitch.name": "Spellcycling",
