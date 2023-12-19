@@ -83,6 +83,7 @@
       ]
     }
   },
+
   "heal": {
     "type": "apoli:active_self",
     "entity_action": {

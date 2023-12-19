@@ -1,5 +1,23 @@
 {
   "type": "apoli:multiple",
+
+  "magifire_apply": {
+    "type":"apoli:target_action_on_hit",
+    "damage_condition": {
+      "type": "apoli:projectile",
+      "projectile": "minecraft:fireball"
+    },
+    "entity_action": {
+      "type": "apoli:apply_effect",
+      "effect": {
+        "effect": "touhouorigins:magifire",
+        "duration": 10,
+        "show_particles": false,
+        "show_icon": false
+      }
+    }
+  },
+
   "fireball_spawn": {
     "type": "apoli:fire_projectile",
     "entity_type": "minecraft:fireball",
@@ -18,13 +36,13 @@
       "conditions": [
         {
           "type": "apoli:resource",
-          "resource": "touhouorigins:magician/mana_resource",
+          "resource": "touhouorigins:elementalist/mana_resource",
           "comparison": ">=",
-          "compare_to": 40
+          "compare_to": 60
         },
         {
           "type": "apoli:resource",
-          "resource": "touhouorigins:magician/spellswitch_counter",
+          "resource": "touhouorigins:elementalist/spellcycle_counter",
           "comparison": "==",
           "compare_to": 0
         }
@@ -41,8 +59,8 @@
           "ticks": 1,
           "action": {
             "type": "apoli:change_resource",
-            "resource": "touhouorigins:magician/mana_resource",
-            "change": -40
+            "resource": "touhouorigins:elementalist/mana_resource",
+            "change": -60
           }
         },
         {
@@ -57,7 +75,7 @@
         },
         {
           "type": "apoli:execute_command",
-          "command": "particle minecraft:lava ~ ~1 ~ 0.1 0.1 0.1 1 75"
+          "command": "particle minecraft:lava ~ ~1 ~ 0.1 0.1 0.1 1 25"
         }
       ]
     },
@@ -70,19 +88,187 @@
       "conditions": [
         {
           "type": "apoli:resource",
-          "resource": "touhouorigins:magician/mana_resource",
+          "resource": "touhouorigins:elementalist/mana_resource",
           "comparison": ">=",
-          "compare_to": 40
+          "compare_to": 60
         },
         {
           "type": "apoli:resource",
-          "resource": "touhouorigins:magician/spellswitch_counter",
+          "resource": "touhouorigins:elementalist/spellcycle_counter",
           "comparison": "==",
           "compare_to": 0
         }
       ]
     }
   },
+  "fireball_explode":{
+    "type": "apoli:action_on_hit",
+    "bientity_action":{
+      "type": "apoli:target_action",
+      "action": {
+        "type": "apoli:chance",
+        "action": {
+          "type": "and",
+          "actions": [
+            {
+              "type": "apoli:spawn_particles",
+              "particle": {
+                "type": "minecraft:flame"
+              },
+              "count": 200,
+              "speed": 0,
+              "spread": {
+                "x": 0.5,
+                "y": 3,
+                "z": 0.5
+              },
+              "offset_y": 1.5
+            },
+            {
+              "type": "apoli:spawn_particles",
+              "particle": {
+                "type": "minecraft:flame"
+              },
+              "count": 100,
+              "speed": 0,
+              "spread": {
+                "x": 0.25,
+                "y": 3,
+                "z": 0.25
+              },
+              "offset_y": 3
+            },
+            {
+              "type": "apoli:spawn_particles",
+              "particle": {
+                "type": "minecraft:flame"
+              },
+              "count": 100,
+              "speed": 0,
+              "spread": {
+                "x": 0.1,
+                "y": 4,
+                "z": 0.1
+              },
+              "offset_y": 5
+            },
+            {
+              "type": "apoli:spawn_particles",
+              "particle": {
+                "type": "minecraft:flame"
+              },
+              "count": 100,
+              "speed": 0.2,
+              "spread": {
+                "x": 2,
+                "y": 0,
+                "z": 2
+              },
+              "offset_y": 0
+            },
+            {
+              "type": "apoli:spawn_particles",
+              "particle": {
+                "type": "minecraft:flame"
+              },
+              "count": 200,
+              "speed": 0.01,
+              "spread": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              },
+              "offset_y": -1
+            },
+            {
+              "type": "apoli:spawn_particles",
+              "particle": {
+                "type": "minecraft:lava"
+              },
+              "count": 50,
+              "speed": 0.01,
+              "spread": {
+                "x": 1,
+                "y": 0,
+                "z": 1
+              },
+              "offset_y": 1
+            },
+            {
+              "type": "apoli:spawn_particles",
+              "particle": {
+                "type": "minecraft:lava"
+              },
+              "count": 20,
+              "speed": 0.01,
+              "spread": {
+                "x": 1,
+                "y": 5,
+                "z": 1
+              },
+              "offset_y": 2.5
+            },
+            {
+              "type": "apoli:area_of_effect",
+              "radius": 6,
+              "bientity_action": {
+                "type": "apoli:target_action",
+                "action": {
+                  "type": "apoli:and",
+                  "actions": [
+                    {
+                      "type": "apoli:set_on_fire",
+                      "duration": 5
+                    },
+                    {
+                      "type": "apoli:damage",
+                      "amount": 8,
+                      "source": {
+                        "name": "onFire",
+                        "fire": "true",
+                        "bypasses_armor": true
+                      }
+                    },
+                    {
+                      "type": "apoli:apply_effect",
+                      "effect": {
+                        "effect": "touhouorigins:magifire",
+                        "duration": 10,
+                        "show_particles": false,
+                        "show_icon": false
+                      }
+                    },
+                    {
+                      "type": "apoli:clear_effect",
+                      "effect": "touhouorigins:magiwood"
+                    },
+                    {
+                      "type": "apoli:clear_effect",
+                      "effect": "touhouorigins:magimetal"
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+        },
+        "chance": 1
+      }
+    },
+    "damage_condition": {
+      "type": "apoli:projectile",
+      "projectile": "minecraft:fireball"
+    },
+    "bientity_condition": {
+      "type": "apoli:target_condition",
+      "condition": {
+        "type": "apoli:status_effect",
+        "effect": "touhouorigins:magiwood"
+      }
+    },
+    "cooldown": 5
+  },
+
   "heal": {
     "type": "apoli:active_self",
     "entity_action": {
@@ -90,7 +276,7 @@
       "actions": [
         {
           "type": "apoli:change_resource",
-          "resource": "touhouorigins:magician/mana_resource",
+          "resource": "touhouorigins:elementalist/mana_resource",
           "change": -65
         },
         {
@@ -136,13 +322,13 @@
       "conditions": [
         {
           "type": "apoli:resource",
-          "resource": "touhouorigins:magician/mana_resource",
+          "resource": "touhouorigins:elementalist/mana_resource",
           "comparison": ">=",
           "compare_to": 65
         },
         {
           "type": "apoli:resource",
-          "resource": "touhouorigins:magician/spellswitch_counter",
+          "resource": "touhouorigins:elementalist/spellcycle_counter",
           "comparison": "==",
           "compare_to": 1
         }

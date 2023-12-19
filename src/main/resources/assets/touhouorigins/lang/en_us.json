@@ -141,7 +141,7 @@
   "power.touhouorigins.elementalist/spells.name": "Spellcasting",
   "power.touhouorigins.elementalist/spells.description": "You have access to seven spells, each relating to the elements of the Wu Xing.",
   "power.touhouorigins.elementalist/spellcycle.name": "Spellcycling",
-  "power.touhouorigins.elementalist/soellcycle.description": "You can cycle through your spell list.",
+  "power.touhouorigins.elementalist/spellcycle.description": "You can cycle through your spell list.",
   "power.touhouorigins.elementalist/frail_body.name": "Spellbound",
   "power.touhouorigins.elementalist/frail_body.description": "Although your magical prowess has increased immensely, your body has deteriorated to the point of no return. You still retain poison immunity and xp gain.",
 
@@ -182,6 +182,11 @@
   "touhouorigins.gui.badge.upgrade": "Upgrade path",
 
   "effect.touhouorigins.manapower": "Mana Power",
+  "effect.touhouorigins.magifire": "火",
+  "effect.touhouorigins.magiwater": "水",
+  "effect.touhouorigins.magiwood": "木",
+  "effect.touhouorigins.magimetal": "金",
+  "effect.touhouorigins.magiearth": "土",
 
   "item.minecraft.potion.effect.manapower_potion": "Mana Power Potion",
   "item.minecraft.splash_potion.effect.manapower_potion": "Splash Potion of Mana Power",

@@ -50,7 +50,7 @@
           "type": "apoli:resource",
           "resource": "touhouorigins:magician/mana_resource",
           "comparison": "<",
-          "compare_to": 150
+          "compare_to": 200
         },
         {
           "type": "apoli:status_effect",
@@ -75,7 +75,7 @@
           "type": "apoli:resource",
           "resource": "touhouorigins:magician/mana_resource",
           "comparison": "<",
-          "compare_to": 150
+          "compare_to": 200
         },
         {
           "type": "apoli:status_effect",

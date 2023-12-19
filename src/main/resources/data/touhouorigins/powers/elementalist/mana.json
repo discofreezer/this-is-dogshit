@@ -8,13 +8,13 @@
       "sprite_location": "origins:textures/gui/community/spiderkolo/resource_bar_02.png",
       "bar_index": 15
     },
-    "start_value": 200
+    "start_value": 300
   },
   "resource_gain": {
     "type": "apoli:action_over_time",
     "entity_action": {
       "type": "apoli:change_resource",
-      "resource": "touhouorigins:magician/mana_resource",
+      "resource": "touhouorigins:elementalist/mana_resource",
       "change": 3
     },
     "interval": 10,
@@ -23,9 +23,9 @@
       "conditions": [
         {
           "type": "apoli:resource",
-          "resource": "touhouorigins:magician/mana_resource",
+          "resource": "touhouorigins:elementalist/mana_resource",
           "comparison": "<",
-          "compare_to": 200
+          "compare_to": 300
         },
         {
           "type": "apoli:status_effect",
@@ -39,7 +39,7 @@
     "type": "apoli:action_over_time",
     "entity_action": {
       "type": "apoli:change_resource",
-      "resource": "touhouorigins:magician/mana_resource",
+      "resource": "touhouorigins:elementalist/mana_resource",
       "change": 3
     },
     "interval": 6,
@@ -48,9 +48,9 @@
       "conditions": [
         {
           "type": "apoli:resource",
-          "resource": "touhouorigins:magician/mana_resource",
+          "resource": "touhouorigins:elementalist/mana_resource",
           "comparison": "<",
-          "compare_to": 150
+          "compare_to": 300
         },
         {
           "type": "apoli:status_effect",
@@ -64,7 +64,7 @@
     "type": "apoli:action_over_time",
     "entity_action": {
       "type": "apoli:change_resource",
-      "resource": "touhouorigins:magician/mana_resource",
+      "resource": "touhouorigins:elementalist/mana_resource",
       "change": 3
     },
     "interval": 3,
@@ -73,9 +73,9 @@
       "conditions": [
         {
           "type": "apoli:resource",
-          "resource": "touhouorigins:magician/mana_resource",
+          "resource": "touhouorigins:elementalist/mana_resource",
           "comparison": "<",
-          "compare_to": 150
+          "compare_to": 300
         },
         {
           "type": "apoli:status_effect",
