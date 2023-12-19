@@ -162,7 +162,7 @@
 
   "effect.touhouorigins.manapower": "Mana Power",
 
-  "item.touhouorigins.potion.effect.manapower_potion": "Mana Power Potion",
-  "item.touhouorigins.splash_potion.effect.manapower_potion": "Splash Potion of Mana Power",
-  "item.touhouorigins.lingering_potion.effect.manapower_potion": "Lingering Potion of Mana Power"
+  "item.minecraft.potion.effect.manapower_potion": "Mana Power Potion",
+  "item.minecraft.splash_potion.effect.manapower_potion": "Splash Potion of Mana Power",
+  "item.minecraft.lingering_potion.effect.manapower_potion": "Lingering Potion of Mana Power"
 }

@@ -15,9 +15,9 @@
     "entity_action": {
       "type": "apoli:change_resource",
       "resource": "touhouorigins:magician/mana_resource",
-      "change": 10
+      "change": 2
     },
-    "interval": 80,
+    "interval": 15,
     "condition": {
       "type": "apoli:and",
       "conditions": [
@@ -40,9 +40,9 @@
     "entity_action": {
       "type": "apoli:change_resource",
       "resource": "touhouorigins:magician/mana_resource",
-      "change": 10
+      "change": 2
     },
-    "interval": 40,
+    "interval": 9,
     "condition": {
       "type": "apoli:and",
       "conditions": [
@@ -65,9 +65,9 @@
     "entity_action": {
       "type": "apoli:change_resource",
       "resource": "touhouorigins:magician/mana_resource",
-      "change": 10
+      "change": 2
     },
-    "interval": 20,
+    "interval": 5,
     "condition": {
       "type": "apoli:and",
       "conditions": [
