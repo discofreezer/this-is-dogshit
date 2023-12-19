@@ -91,7 +91,7 @@
         {
           "type": "apoli:change_resource",
           "resource": "touhouorigins:magician/mana_resource",
-          "change": -60
+          "change": -65
         },
         {
           "type": "apoli:heal",
@@ -138,7 +138,7 @@
           "type": "apoli:resource",
           "resource": "touhouorigins:magician/mana_resource",
           "comparison": ">=",
-          "compare_to": 60
+          "compare_to": 65
         },
         {
           "type": "apoli:resource",
