@@ -1,0 +1,16 @@
+{
+  "parent": "touhouorigins:root",
+  "criteria": {
+    "chose_automator": {
+      "trigger": "origins:chose_origin",
+      "conditions": {
+        "origin": "touhouorigins:automator"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "chose_automator"
+    ]
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "parent": "touhouorigins:root",
+  "criteria": {
+    "chose_elementalist": {
+      "trigger": "origins:chose_origin",
+      "conditions": {
+        "origin": "touhouorigins:elementalist"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "chose_elementalist"
+    ]
+  ]
+}

@@ -1,0 +1,12 @@
+{
+	"powers": [
+		"touhouorigins:elementalist/mana",
+		"touhouorigins:elementalist/spells",
+		"touhouorigins:elementalist/spellcycle",
+		"touhouorigins:elementalist/frail_body"
+	],
+	"icon": "minecraft:string",
+	"order": 5,
+	"impact": 3,
+	"unchoosable": true
+}

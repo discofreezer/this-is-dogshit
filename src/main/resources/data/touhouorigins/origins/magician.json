@@ -3,11 +3,24 @@
 		"touhouorigins:magician/mana",
 		"touhouorigins:magician/spells",
 		"touhouorigins:magician/spellswitch",
-		"touhouorigins:magician/weak_body"
+		"touhouorigins:magician/weak_body",
+		"touhouorigins:magician/elemental_studies",
+		"touhouorigins:magician/automation_studies",
+		"touhouorigins:magician/key_check_magician"
 	],
 	"icon": "minecraft:brown_mushroom",
 	"order": 4,
 	"impact": 2,
-	"name": "Magician",
-	"description": "While highly skilled in magic, a magician youkai's body is essentially human, and they do not possess the enhanced physical strength and durability of most youkai. In fact many magician youkai are frail even by human standards."
+	"upgrades": [
+		{
+			"condition": "touhouorigins:magi_up_elementalist",
+			"origin": "touhouorigins:elementalist",
+			"announcement": "origin.touhouorigins.magician.announcementElementalist"
+		},
+		{
+			"condition": "touhouorigins:magi_up_automator",
+			"origin": "touhouorigins:automator",
+			"announcement": "origin.touhouorigins.magician.announcementAutomator"
+		}
+	]
 }

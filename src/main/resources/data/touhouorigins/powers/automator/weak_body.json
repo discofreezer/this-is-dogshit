@@ -21,7 +21,7 @@
         "name": "Max health decrease",
         "attribute": "minecraft:generic.max_health",
         "operation": "addition",
-        "value": -4
+        "value": -2
       },
       {
         "name": "Attack speed decrease",

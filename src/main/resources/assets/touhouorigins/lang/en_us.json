@@ -117,6 +117,8 @@
 
   "origin.touhouorigins.magician.name": "Magician",
   "origin.touhouorigins.magician.description":  "While highly skilled in magic, a magician youkai's body is essentially human, and they do not possess the enhanced physical strength and durability of most youkai. In fact many magician youkai are frail even by human standards.",
+  "origin.touhouorigins.magician.announcmentElementalist": "You have mastered elemental magic",
+  "origin.touhouorigins.magician.announcementAutomator": "You have mastered automation magic",
 
   "power.touhouorigins.magician/mana.name": "Mana",
   "power.touhouorigins.magician/mana.description": "You use mana to cast spells, which has a unique meter that regenerates over time. You also cannot starve." ,
@@ -126,6 +128,25 @@
   "power.touhouorigins.magician/spellswitch.description": "You can cycle through your spell list.",
   "power.touhouorigins.magician/weak_body.name": "Dedicated to the Craft",
   "power.touhouorigins.magician/weak_body.description": "As a magician, your physical attributes are weaker. However, you gain xp slightly faster and are immune to poison.",
+  "power.touhouorigins.magician/elemental_studies.name": "Elemental Studies",
+  "power.touhouorigins.magician/elemental_studies.description": "(Chosen with Book, 30 Levels) By deepening your studies in elemental magic, you can become a more powerful and versatile mage at the cost of your physical health.",
+  "power.touhouorigins.magician/automation_studies.name": "Automation Studies",
+  "power.touhouorigins.magician/automation_studies.description": "(Chosen with String, 30 Levels) By relentlessly pursuing automation, you can manipulate inanimate objects with ease. Though complicated, it can be powerful.",
+
+  "origin.touhouorigins.elementalist.name": "Elementalist",
+  "origin.touhouorigins.elementalist.description": "A magician whose life is devoted to the mastery of the elemental Wu Xing, at the cost of severe physical deterioration. Elementalists have extremely powerful and diverse spells, but are helpless without them.",
+
+  "power.touhouorigins.elementalist/mana.name": "Mana",
+  "power.touhouorigins.elementalist/mana.description": "You use mana to cast spells, which has a unique meter that regenerates over time. You also cannot starve.",
+  "power.touhouorigins.elementalist/spells.name": "Spellcasting",
+  "power.touhouorigins.elementalist/spells.description": "You have access to seven spells, each relating to the elements of the Wu Xing.",
+  "power.touhouorigins.elementalist/spellcycle.name": "Spellcycling",
+  "power.touhouorigins.elementalist/soellcycle.description": "You can cycle through your spell list.",
+  "power.touhouorigins.elementalist/frail_body.name": "Spellbound",
+  "power.touhouorigins.elementalist/frail_body.description": "Although your magical prowess has increased immensely, your body has deteriorated to the point of no return. You still retain poison immunity and xp gain.",
+
+  "origin.touhouorigins.automator.name": "Dollmaker",
+  "origin.touhouorigins.automator.description": "A magician whose life is devoted to achieving true automation of inanimate objects. While retaining some physical capability, your magic is highly specialized and technical, revolving around the manipulation of dolls.",
 
   "power.touhouorigins.common/apparition_appetite.name": "Apparition's Appetite",
   "power.touhouorigins.common/apparition_appetite.description": "You do not require food to stay alive.",

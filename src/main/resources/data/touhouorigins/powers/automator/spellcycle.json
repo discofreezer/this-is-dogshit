@@ -33,7 +33,7 @@
               },
               {
                 "type": "apoli:execute_command",
-                "command": "title @s actionbar {\"text\": \"Fireball\", \"color\": \"red\"}"
+                "command": "tellraw @s {\"text\": \"Fireball\", \"color\": \"red\"}"
               }
             ]
           }
@@ -55,7 +55,7 @@
               },
               {
                 "type": "apoli:execute_command",
-                "command": "title @s actionbar {\"text\": \"Heal\", \"color\": \"blue\"}"
+                "command": "tellraw @s {\"text\": \"Heal\", \"color\": \"blue\"}"
               }
             ]
           }

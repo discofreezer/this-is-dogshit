@@ -1,0 +1,103 @@
+{
+  "type": "apoli:multiple",
+  "resource": {
+    "type": "apoli:resource",
+    "min": 0,
+    "max": 300,
+    "hud_render": {
+      "sprite_location": "origins:textures/gui/community/spiderkolo/resource_bar_02.png",
+      "bar_index": 15
+    },
+    "start_value": 200
+  },
+  "resource_gain": {
+    "type": "apoli:action_over_time",
+    "entity_action": {
+      "type": "apoli:change_resource",
+      "resource": "touhouorigins:magician/mana_resource",
+      "change": 3
+    },
+    "interval": 10,
+    "condition": {
+      "type": "apoli:and",
+      "conditions": [
+        {
+          "type": "apoli:resource",
+          "resource": "touhouorigins:magician/mana_resource",
+          "comparison": "<",
+          "compare_to": 200
+        },
+        {
+          "type": "apoli:status_effect",
+          "effect": "touhouorigins:manapower",
+          "inverted": true
+        }
+      ]
+    }
+  },
+  "resource_gain_power_1": {
+    "type": "apoli:action_over_time",
+    "entity_action": {
+      "type": "apoli:change_resource",
+      "resource": "touhouorigins:magician/mana_resource",
+      "change": 3
+    },
+    "interval": 6,
+    "condition": {
+      "type": "apoli:and",
+      "conditions": [
+        {
+          "type": "apoli:resource",
+          "resource": "touhouorigins:magician/mana_resource",
+          "comparison": "<",
+          "compare_to": 150
+        },
+        {
+          "type": "apoli:status_effect",
+          "effect": "touhouorigins:manapower",
+          "max_amplifier": 0
+        }
+      ]
+    }
+  },
+  "resource_gain_power_2": {
+    "type": "apoli:action_over_time",
+    "entity_action": {
+      "type": "apoli:change_resource",
+      "resource": "touhouorigins:magician/mana_resource",
+      "change": 3
+    },
+    "interval": 3,
+    "condition": {
+      "type": "apoli:and",
+      "conditions": [
+        {
+          "type": "apoli:resource",
+          "resource": "touhouorigins:magician/mana_resource",
+          "comparison": "<",
+          "compare_to": 150
+        },
+        {
+          "type": "apoli:status_effect",
+          "effect": "touhouorigins:manapower",
+          "min_amplifier": 1
+        }
+      ]
+    }
+  },
+  "no_exhaust": {
+    "type": "apoli:modify_exhaustion",
+    "modifier": {
+      "name": "No exhaustion",
+      "operation": "multiply_total_multiplicative",
+      "value": -1
+    }
+  },
+  "hunger_immunity": {
+    "type": "apoli:effect_immunity",
+    "effect": "minecraft:hunger"
+  },
+  "disable_regen": {
+    "type": "apoli:disable_regen"
+  }
+}
